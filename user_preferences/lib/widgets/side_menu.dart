@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_preferences/screens/screens.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
@@ -13,7 +14,9 @@ class SideMenu extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.pages_outlined),
             title: const Text('home'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(context, HomeScreen.routerName);
+            },
           ),
           ListTile(
             leading: const Icon(Icons.people_outlined),
@@ -23,7 +26,10 @@ class SideMenu extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.settings_outlined),
             title: const Text('settings'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(
+                  context, SettingsScreen.routerName);
+            },
           )
         ],
       ),
