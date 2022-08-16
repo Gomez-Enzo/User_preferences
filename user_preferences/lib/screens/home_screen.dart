@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Home Screen'),
         ),
-        drawer: SideMenu(),
+        drawer: const SideMenu(),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
