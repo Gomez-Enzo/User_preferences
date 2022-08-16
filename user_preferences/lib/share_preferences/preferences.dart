@@ -5,4 +5,8 @@ class Preferences {
   static String _name = '';
   static bool _isDarkmode = false;
   static int _gender = 1;
+
+  static Future init() async {
+    _prefs = await SharedPreferences.getInstance();
+  }
 }
