@@ -3,7 +3,7 @@ import 'package:user_preferences/share_preferences/preferences.dart';
 import 'package:user_preferences/widgets/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const String routerName = 'home';
+  static const String routerName = 'Home';
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text('isDarkmode: ${Preferences.isDarkmode}'),
             const Divider(),
-            Text('Genero: ${Preferences.gender}'),
+            Text('Genero: '),
             const Divider(),
             Text('Nombre de Usuario: ${Preferences.name}'),
             const Divider(),
