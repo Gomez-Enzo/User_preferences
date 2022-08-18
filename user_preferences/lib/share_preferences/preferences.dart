@@ -29,7 +29,7 @@ class Preferences {
   }
 
   static int get gender {
-    return _prefs.getInt('gender') ?? -gender;
+    return _prefs.getInt('gender') ?? _gender;
   }
 
   static set gender(int value) {

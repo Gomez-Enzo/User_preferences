@@ -49,7 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const Divider(),
                 RadioListTile<int>(
                     value: 1,
-                    groupValue: 1,
+                    groupValue: Preferences.gender,
                     title: const Text('Masculino'),
                     onChanged: (value) {
                       Preferences.gender = value ?? 1;
@@ -58,7 +58,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const Divider(),
                 RadioListTile<int>(
                     value: 2,
-                    groupValue: 1,
+                    groupValue: Preferences.gender,
                     title: const Text('Femenino'),
                     onChanged: (value) {
                       Preferences.gender = value ?? 2;

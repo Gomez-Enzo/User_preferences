@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text('isDarkmode: ${Preferences.isDarkmode}'),
             const Divider(),
-            Text('Genero: '),
+            Text('Genero: ${Preferences.gender}'),
             const Divider(),
             Text('Nombre de Usuario: ${Preferences.name}'),
             const Divider(),
